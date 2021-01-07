@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+#index {
+    background-color: grey;
+}
+
+.conteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(../images/dddd.png);
+    background-size: cover;
+    height: 15vh;
+
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    background-image: url(../images/pngegg.png);
+    height: 15vh;
+    width: 6vw;
+    background-size: contain;
+    justify-self: flex-start;
+}
+
+.conteneur a {
+    font-size: 5vh;
+    color: white;
+    text-decoration: none !important;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0px 3px 4px #e70f0f;
+}
+
+.conteneur a:hover {
+    color: #e70f0f;
+    text-shadow: 0px 3px 4px white;
+}
+
+h1 {
+    animation: flash 2.4s linear infinite;
+
+    text-indent: 43vw;
+    padding-bottom: 3vh;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+
+}
+
+.bgtitre {
+    padding: 40px;
+    margin-top: 2%;
+    height: 150px;
+    background-color: black;
+    box-shadow: 0px 0px 13px 2px red inset;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.showlikepussy {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 5% 5% 5% 5%;
+}
+
+.ecrire {
+    width: 60%;
+    margin-left: 10%;
+    height: 10%;
+    margin-top: 5%;
+    font-size: 50px;
+}
+
+#discussion {
+    background-image: url(../images/81660.jpg);
+    background-size: cover;
+
+}
+
+#demo {
+    width: 60%;
+    background-color: #130d0d;
+    margin: 5% 0 5% 0;
+    align-items: center;
+}
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.envoyer {
+    width: 15%;
+    margin-top: 5%;
+    height: 10%;
+    font-size: 50px;
+}
+
+@keyframes flash {
+    0% {
+        color: blue;
+        text-shadow: 0 0 3px wheat, 0 0 50px wheat;
+    }
+
+    20% {
+        color: red;
+        text-shadow: 0 0 3px wheat, 0 0 50px wheat;
+    }
+
+    70% {
+        color: blue;
+        text-shadow: none;
+    }
+
+
+
+    100% {
+        color: blue;
+        text-shadow: 0 0 3px wheat, 0 0 50px wheat;
+    }
+}
+
+.alerte {
+    background-color: #e70f0f;
+    font-size: 30px;
+    text-indent: 30%;
+    width: 100%;
+}
+
+
+.hiboux {
+    margin-left: 3vw;
+    animation: animationFrames linear 8s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: translate(0px, 0px) rotate(-15deg);
+    }
+
+    25% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+
+    50% {
+        transform: translate(0px, 0px) rotate(-15deg);
+    }
+
+    75% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(-15deg);
+    }
+}
+
+#bodyinscription {
+    background-image: url(../images/3277278.jpg);
+}
+
+#bodyconnexion {
+    background-image: url(../images/4213373.png);
+}
+
+.cadre {
+    width: 80%;
+    max-height: 80%;
+    margin-left: 10%;
+    padding: 0 2% 0 2%;
+    color: grey;
+    font-size: 30px;
+    background-color: #130d0d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.form-group {
+    line-height: 8vh;
+}
+
+.hiboux2 {
+    margin-left: 20vw;
+    animation: animationFrames2 linear 8s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes animationFrames2 {
+    0% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+
+    25% {
+        transform: translate(0px, 0px) rotate(-15deg);
+    }
+
+    50% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+
+    75% {
+        transform: translate(0px, 0px) rotate(-15deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(15deg);
+    }
+}
+
+.texteindex {
+    font-family: 'Nerko One', cursive;
+    font-size: 30px;
+    box-shadow: 0px 0px 13px 2px greenyellow inset;
+    padding: 3vh 0 3vh 0;
+    text-align: center;
+    background-color: black;
+    color: blue;
+}
+
+.gamme {
+    text-indent: 40vw;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.produits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% 0 2% 0;
+}
+
+.rog {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    margin: 20px 20px 0 0;
+    width: 80%;
+}
+
+.card-text {
+    text-align: end;
+}
+
+.card-body {
+    height: 200px;
+}
+
+.footer {
+    background-color: #130d0d;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+
+footer {
+    background-color: #130d0d;
+
+}
