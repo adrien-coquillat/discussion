@@ -1,5 +1,14 @@
 <?php
 session_start();
+
+function getDir()
+{
+        $dir = explode('/', $_SERVER['SCRIPT_FILENAME']);
+        unset($dir[count($dir) - 1]);
+        return join('/', $dir);
+}
+
+
 if (isset($_GET['disconnect'])) {
         session_destroy();
         header('Location: http://localhost/discussion/pages/connexion.php');
@@ -9,15 +18,15 @@ if (isset($_GET['disconnect'])) {
 
 <header class="conteneur">
         <div class="logo"></div>
-        <a href="http://localhost/discussion/index.php">ACCUEIL</a>
+        <a href="../index.php">ACCUEIL</a>
         <?php
         if (isset($_SESSION['isconnected']) && $_SESSION['isconnected'] === true) {
-                echo "<a href='http://localhost/discussion/pages/profil.php'>" . $_SESSION['user'] . "</a>";
-                echo  "<a href='http://localhost/discussion/pages/discussion.php'>MESSAGES</a>";
+                echo "<a href='profil.php'>" . $_SESSION['user'] . "</a>";
+                echo  "<a href='discussion.php'>MESSAGES</a>";
                 echo "<a href='?disconnect'> DECONNEXION </a>";
         } else {
-                echo  "<a href='http://localhost/discussion/pages/connexion.php'>CONNEXION</a>";
-                echo  "<a href='http://localhost/discussion/pages/inscription.php'>INSCRIPTION</a>";
+                echo  "<a href='connexion.php'>CONNEXION</a>";
+                echo  "<a href='inscription.php'>INSCRIPTION</a>";
         }
         ?>
 </header>
